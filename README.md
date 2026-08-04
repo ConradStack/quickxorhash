@@ -8,36 +8,34 @@ This project is a command line application that computes a hash value for binary
 
 - .NET SDK (version 5.0 or later)
 
-### Building the Project
+### Building
 
 To build the project, navigate to the project directory and run the following command:
 
-```
+```bash
 dotnet build
 ```
 
-### Running the Application
+### Test
 
 To run the application, use the following command:
 
-```
+```bash
 dotnet run -- <path_to_file>
 ```
 
 Replace `<path_to_file>` with the path to the binary or text file you want to hash.
 
-### Example Usage
+The application will output the computed hash value as a base64 string.
 
-For example, to compute the hash of a file named `example.txt`, you would run:
+### Publish executable
 
+Compile the application to a single, portable executable:
+
+```bash
+dotnet publish -c Release -r osx-arm64 --self-contained true
+
+# Move to a PATH location e.g.,
+cp bin/Release/net10.0/osx-arm64/publish/quickxorhash ~/bin/
 ```
-dotnet run -- example.txt
-```
 
-### Output
-
-The application will output the computed hash value in a hexadecimal format.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
