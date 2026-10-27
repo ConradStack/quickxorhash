@@ -1,6 +1,6 @@
 # QuickXorHash CLI
 
-This project is a command line application that computes a hash value for binary or text files using the QuickXorHash algorithm.  The implementation here comes direct from [Microsoft docs](https://learn.microsoft.com/en-us/onedrive/developer/code-snippets/quickxorhash) (acccessed 2026-08-04).
+This project is a command line application that computes a hash value for binary or text files using the QuickXorHash algorithm.  The implementation here comes direct from [Microsoft docs](https://learn.microsoft.com/en-us/onedrive/developer/code-snippets/quickxorhash) (accessed 2026-08-04).
 
 ## Getting Started
 
